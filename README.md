@@ -90,8 +90,8 @@ cv2.destroyAllWindows()
 # 思考题
 - 为什么要进行预处理？
 <br> 图像预处理的目的是提高图像质量，去除噪声和不必要的干扰，使得后续的图像分析更加精确。
-<br>
-- OpenCV 的自适应阈值处理函数 cv2.adaptiveThreshold 的原理是什么？
+
+- OpenCV 的自适应阈值处理函数 cv2.adaptiveThreshold 的原理是什么？<br>
 [python3 opencv 图像二值化笔记（cv2.adaptiveThreshold）](https://blog.csdn.net/laoyezha/article/details/106445437)
 
 - OpenCV 的轮廓提取函数 cv2.findContours 的调用语法是什么？<br>
