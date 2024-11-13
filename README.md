@@ -90,10 +90,13 @@ cv2.destroyAllWindows()
 # 思考题
 - 为什么要进行预处理？
 <br> 图像预处理的目的是提高图像质量，去除噪声和不必要的干扰，使得后续的图像分析更加精确。
+<br>
 - OpenCV 的自适应阈值处理函数 cv2.adaptiveThreshold 的原理是什么？
 [python3 opencv 图像二值化笔记（cv2.adaptiveThreshold）](https://blog.csdn.net/laoyezha/article/details/106445437)
+<br>
 - OpenCV 的轮廓提取函数 cv2.findContours 的调用语法是什么？
 [opencv学习—cv2.findContours()函数讲解（python）](https://blog.csdn.net/weixin_44690935/article/details/109008946)
+<br>
 - imutils 库中的 four_point_transform 函数，与透视变换函数有无区别？
 <br> four_point_transform 是 imutils 库中的一个函数，简化了透视变换的操作。与 OpenCV 的 cv2.getPerspectiveTransform 和 cv2.warpPerspective 组合使用不同，它只需要输入四个角点，自动计算透视矩阵并执行变换，简化了过程。
 <br> 透视变换总结：
