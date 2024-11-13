@@ -97,7 +97,7 @@ cv2.destroyAllWindows()
 - OpenCV 的轮廓提取函数 cv2.findContours 的调用语法是什么？<br>
 [opencv学习—cv2.findContours()函数讲解（python）](https://blog.csdn.net/weixin_44690935/article/details/109008946)
 
-- imutils 库中的 four_point_transform 函数，与透视变换函数有无区别？<br>
+- imutils 库中的 four_point_transform 函数，与透视变换函数有无区别？
 <br> four_point_transform 是 imutils 库中的一个函数，简化了透视变换的操作。与 OpenCV 的 cv2.getPerspectiveTransform 和 cv2.warpPerspective 组合使用不同，它只需要输入四个角点，自动计算透视矩阵并执行变换，简化了过程。
 <br> 透视变换总结：
 <br> cv2.getPerspectiveTransform：计算透视变换矩阵。
