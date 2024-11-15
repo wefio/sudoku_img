@@ -14,7 +14,6 @@ pip install -r requirements.txt
 ```
 ## 实验代码
 ```bash
-# 导入库
 import cv2
 import argparse
 import imutils
@@ -33,6 +32,7 @@ if image is None:
 
 # 显示原始图像
 cv2.imshow("Original Image", image)
+cv2.imwrite("original_image.png", image)  # 保存原图像
 cv2.waitKey(0)
 
 # 图像预处理：灰度化和高斯模糊
@@ -47,6 +47,7 @@ thresh = cv2.bitwise_not(thresh)
 
 # 显示阈值化后的图像
 cv2.imshow("Threshold Image", thresh)
+cv2.imwrite("threshold_image.png", thresh)  # 保存阈值化后的图像
 cv2.waitKey(0)
 
 # 轮廓检测
@@ -74,6 +75,7 @@ if puzzleCnt is None:
 output = image.copy()
 cv2.drawContours(output, [puzzleCnt], -1, (0, 255, 0), 2)
 cv2.imshow("Puzzle Outline", output)
+cv2.imwrite("puzzle_outline.png", output)  # 保存轮廓图
 cv2.waitKey(0)
 
 # 透视变换
@@ -82,10 +84,10 @@ warped = four_point_transform(gray, puzzleCnt.reshape(4, 2))
 
 # 显示透视变换后的图像
 cv2.imshow("Puzzle Transform", puzzle)
+cv2.imwrite("puzzle_transform.png", puzzle)  # 保存透视变换后的图像
 cv2.waitKey(0)
 
 cv2.destroyAllWindows()
-
 ```
 # 思考题
 - 为什么要进行预处理？
