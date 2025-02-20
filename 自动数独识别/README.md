@@ -22,6 +22,7 @@ Pytesseract 是一个 Python 包，它作为开源工具 Tesseract-OCR 的封装
 本项目推荐使用 Visual Studio Code (VSCode) 并结合 Conda 虚拟环境进行开发。以下是运行指南：
 <p>1. 将包含代码的工作文件夹拖入 VSCode 中。</p>
 <p>2. 使用命令行导入所有依赖：</p>
+
 ```bash
    pip install -r requirements.txt
 ```
