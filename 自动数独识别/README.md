@@ -3,31 +3,31 @@ OCR 是一种将印刷文本或手写文本从图像转换为可编辑和搜索�
 ## 1.	Pytesseract 和 Tesseract-OCR
 Pytesseract 是一个 Python 包，它作为开源工具 Tesseract-OCR 的封装接口，由 Hewlett Packard 实验室开发并在2005年实行开源；自2006年后，谷歌接手并联合优秀的开源贡献者持续维护和发展。Tesseract 在3.x版本后逐渐成熟，不仅支持多种图片格式，还加入了多语言文本识别功能。尽管3.x版本仍基于传统计算机视觉算法，但得益于近年来深度学习技术的迅猛发展，Tesseract 4.0 版本引入了基于 LSTM（长短期记忆网络，一种循环神经网络）的深度学习模块，这使得其在准确率和速度方面有了显著提升。
 ## 2.	实验环境
-<p>操作系统：Windows 11</p>
-<p>编程语言：Python 3.12</p>
-<p>依赖库：</p>
-<p>  pytesseract: 用于调用 Tesseract OCR 引擎进行文字识别。</p>
-<p>  opencv-python: 提供图像处理功能，如灰度化、二值化、去噪等预处理步骤。</p>
-<p>  其他依赖项详见 requirements.txt 文件。</p>
-<p>Tesseract 版本：使用的是 tesseract-ocr-w64-setup-5.5.0.20241111 安装包。</p>
+<br>操作系统：Windows 11
+<br>编程语言：Python 3.12
+<br>依赖库：
+<br>  pytesseract: 用于调用 Tesseract OCR 引擎进行文字识别。
+<br>  opencv-python: 提供图像处理功能，如灰度化、二值化、去噪等预处理步骤。
+<br>  其他依赖项详见 requirements.txt 文件。
+<br>Tesseract 版本：使用的是 tesseract-ocr-w64-setup-5.5.0.20241111 安装包。
 ## 3.	环境安装
-<p>为了设置工作环境，请遵循以下步骤：</p>
-<p>安装 Tesseract 工具：根据提供的链接下载并安装[Tesseract](https://github.com/tesseract-ocr/tesseract)</p>
-<p>安装 Pytesseract：利用 pip 工具来安装 Pytesseract 包：</p>
+<br>为了设置工作环境，请遵循以下步骤：
+<br>安装 Tesseract 工具：根据提供的链接下载并安装[Tesseract](https://github.com/tesseract-ocr/tesseract)
+<br>安装 Pytesseract：利用 pip 工具来安装 Pytesseract 包：
 
 ```bash
   pip install pytesseract
 ```
 ## 4.	运行步骤
 本项目推荐使用 Visual Studio Code (VSCode) 并结合 Conda 虚拟环境进行开发。以下是运行指南：
-### 1. 将包含代码的工作文件夹拖入 VSCode 中。
-### 2. 使用命令行导入所有依赖：
+<p>1. 将包含代码的工作文件夹拖入 VSCode 中。</p>
+<p>2. 使用命令行导入所有依赖：</p>
 ```bash
    pip install -r requirements.txt
 ```
-### 3. 设置 Tesseract 可执行文件路径，确保该路径正确无误。
-### 4. 配置数独图像路径，项目已提供6个示例图片，这些样本经过测试，具有良好的识别效果。
-### 5.	使用到的核心算法和技术
+<p>3. 设置 Tesseract 可执行文件路径，确保该路径正确无误。</p>
+<p>4. 配置数独图像路径，项目已提供6个示例图片，这些样本经过测试，具有良好的识别效果。</p>
+<p>5.	使用到的核心算法和技术</p>
 <br>预处理：通过 OpenCV 库对图像进行初步处理，包括灰度化、自适应二值化以及形态学操作去除噪声，以提高后续处理的质量。
 <br>数独框检测：采用轮廓检测与多边形逼近方法找到并确定数独表格的边界。
 <br>透视变换与裁剪：运用透视变换校正图像，使其成为标准矩形，并通过裁剪去除无关边缘部分。
