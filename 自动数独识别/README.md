@@ -16,7 +16,7 @@ Pytesseract 是一个 Python 包，它作为开源工具 Tesseract-OCR 的封装
 <br>安装 Pytesseract：利用 pip 工具来安装 Pytesseract 包：
 
 ```bash
-  pip install pytesseract
+pip install pytesseract
 ```
 ## 4.	运行步骤
 本项目推荐使用 Visual Studio Code (VSCode) 并结合 Conda 虚拟环境进行开发。以下是运行指南：
@@ -24,7 +24,7 @@ Pytesseract 是一个 Python 包，它作为开源工具 Tesseract-OCR 的封装
 <p>2. 使用命令行导入所有依赖：</p>
 
 ```bash
-   pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 <p>3. 设置 Tesseract 可执行文件路径，确保该路径正确无误。</p>
 <p>4. 配置数独图像路径，项目已提供6个示例图片，这些样本经过测试，具有良好的识别效果。</p>
