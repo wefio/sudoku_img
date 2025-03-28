@@ -1,3 +1,5 @@
+https://github.com/user-attachments/assets/ecd0acfb-47e3-4aab-8831-4bc5f5af777a
+
 # OCR（Optical Character Recognition）简介
 OCR 是一种将印刷文本或手写文本从图像转换为可编辑和搜索的文本的技术。它广泛应用于文档扫描、证件识别、车牌识别和数字化存档等场景，极大地提高了信息处理效率。
 ## 1.	Pytesseract 和 Tesseract-OCR
