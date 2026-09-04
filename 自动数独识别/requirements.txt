@@ -21,7 +21,7 @@ pytesseract==0.3.13
 python-dateutil==2.9.0.post0
 scikit-image==0.25.0
 scipy==1.14.1
-setuptools==75.1.0
+setuptools==83.0.0
 shapely==2.0.6
 six==1.17.0
 tifffile==2024.12.12
