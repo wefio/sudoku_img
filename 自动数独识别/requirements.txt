@@ -26,4 +26,4 @@ shapely==2.0.6
 six==1.17.0
 tifffile==2024.12.12
 tqdm==4.67.1
-wheel==0.44.0
+wheel==0.46.2
